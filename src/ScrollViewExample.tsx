@@ -1,13 +1,7 @@
 import React, {useState} from 'react';
-import {
-  View,
-  TouchableOpacity,
-  Text,
-  SafeAreaView,
-  StyleSheet,
-} from 'react-native';
-
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {ScrollView} from '@stream-io/flat-list-mvcp';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 const AddMoreButton = ({onPress}) => (
   <TouchableOpacity onPress={onPress} style={styles.addMoreButton}>
