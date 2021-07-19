@@ -40,6 +40,7 @@ export default () => {
 
   return (
     <SafeAreaView style={styles.safeArea}>
+      <Text style={styles.header}>ScrollView</Text>
       <AddMoreButton onPress={addToStart} />
       <View style={styles.listContainer}>
         <ScrollView
@@ -60,6 +61,9 @@ export default () => {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
+  },
+  header: {
+    alignSelf: 'center',
   },
   addMoreButton: {
     padding: 8,
